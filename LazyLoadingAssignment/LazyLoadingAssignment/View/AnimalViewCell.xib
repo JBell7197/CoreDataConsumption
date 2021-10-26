@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="146" id="KGk-i7-Jjw" customClass="AnimalViewCell" customModule="LazyLoadingAssignment" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="433" height="146"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM" customClass="AnimalViewCell" customModule="LazyLoadingAssignment" customModuleProvider="target">
+                <rect key="frame" x="0.0" y="0.0" width="433" height="146"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" restorationIdentifier="previewImage" translatesAutoresizingMaskIntoConstraints="NO" id="sjL-du-Rmx" customClass="LazyLoading" customModule="LazyLoadingAssignment" customModuleProvider="target">
+                        <rect key="frame" x="10" y="17" width="150" height="75"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="150" id="Wuf-Et-BWb"/>
+                            <constraint firstAttribute="height" constant="75" id="d1I-w6-ApQ"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ItH-EJ-qon">
+                        <rect key="frame" x="180" y="44" width="41.5" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="sjL-du-Rmx" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="35" id="5jz-DQ-7Ev"/>
+                    <constraint firstAttribute="bottom" secondItem="sjL-du-Rmx" secondAttribute="bottom" constant="35" id="8nH-2x-B36"/>
+                    <constraint firstItem="ItH-EJ-qon" firstAttribute="leading" secondItem="sjL-du-Rmx" secondAttribute="trailing" constant="20" id="Awz-dq-4QT"/>
+                    <constraint firstItem="sjL-du-Rmx" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="VTO-cg-LwG"/>
+                    <constraint firstItem="ItH-EJ-qon" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="wc7-JM-8qc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="animalImage" destination="sjL-du-Rmx" id="nUq-AF-duq"/>
+                <outlet property="animalName" destination="ItH-EJ-qon" id="gVu-JH-vVy"/>
+            </connections>
+            <point key="canvasLocation" x="131.15942028985509" y="140.95982142857142"/>
+        </tableViewCell>
+    </objects>
+</document>
