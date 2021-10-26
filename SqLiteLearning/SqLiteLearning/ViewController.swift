@@ -194,7 +194,7 @@ class DBHelper {
     }
     
     //func used to delete data from the table which takes an Int as a parameter. The data deleted will depend on the primary key which is the id for this example.
-    //consists of query var, statement variable, variou
+    //consists of query var, statement variable, various sqlite3 functions, and if and else statement to check if deletion has taken place
     func deleteById(id:Int) {
         let deleteQuery = "DELETE FROM person WHERE Id = ?;"
         var deleteStatement : OpaquePointer? = nil
